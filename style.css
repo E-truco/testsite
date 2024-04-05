@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: rgb(12, 13, 27);
+    background-color: #21212c;
     color: white;
     padding: 0px;
     margin: 0px;
@@ -8,6 +8,11 @@ body {
 
 .main_title {
     font-size: 3.5rem;
+    margin-top: 3vh;
+}
+
+.sub_title{
+    margin-top: 0.5vh;
 }
 
 .apps{
@@ -15,22 +20,74 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 7.2vh;
     gap: 5vw;
 }
 
 .appImage{
+    width: 10vw;
     border-radius: 20%;
+}
+
+.appName{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.85vh;
 }
 
 .subApp{
     font-size: 0.5rem;
+    transition: 150ms;
+}
+
+.subApp:hover{
+    scale: 1.1;
+    transition: 150ms;
+    cursor: pointer;
 }
 
 .about {
     width: 100%;
-    background-color: rgb(102, 255, 122);
+    background-color: #52fd85;
     font-size: 2rem;
     margin: 0px;
     padding: 0px;
+    margin-top: 6.5vh;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    font-family: monospace;
+    color: #21212c;
+}
+
+.aboutLeft{
+    height: 100%;
+    width: 52%;
+    overflow: hidden;
+    text-align: left;
+}
+
+.aboutLeftTop{
+    width: 60%;
+    margin-left: auto;
+    font-weight: 100;
+}
+
+.aboutLeftBottom{
+    width: 60%;
+    margin-left: auto;
+    font-size: 1.85rem;
+    font-weight: 100;
+}
+
+.aboutRight{
+    height: 100%;
+    width: 48%;
+    overflow: hidden;
+}
+
+.bold{
+    font-weight: bold;
 }
